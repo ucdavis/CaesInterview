@@ -33,7 +33,7 @@ describe("1 - counter", () => {
     c2.add(5);
 
     assert.equal(5, c1.retrieve()); // 2 + 3 should return 5
-    assert.equal(9, c1.retrieve()); // 4 + 5 should return 9
+    assert.equal(9, c2.retrieve()); // 4 + 5 should return 9
   });
 });
 
