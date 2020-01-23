@@ -1,9 +1,10 @@
 var assert = chai.assert;
 
-/* --- Begin User Code -- */
+/* --- Begin Editable User Code -- */
 
+// returns an array of size n
+// each element is a function which returns the index of that element
 function arrayCreator(n) {
-  // array of functions which return the value for that element
   var arr = [];
   for (var i = 0; i < n; i++) {
     arr[i] = () => i;
@@ -14,10 +15,10 @@ function arrayCreator(n) {
 
 /* -- End User Code -- */
 
-/* -- Begin Tests -- */
+/* -- Begin Tests (Do Not Change Test Code) -- */
 
 describe("2 - array", () => {
-  it("array function should return proper values", function() {
+  it("array function should return proper index values", function() {
     var arr = arrayCreator(5);
 
     assert.equal(arr[0](), 0);
