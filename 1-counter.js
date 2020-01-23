@@ -34,6 +34,9 @@ describe("1 - counter", () => {
 
     assert.equal(5, c1.retrieve()); // 2 + 3 should return 5
     assert.equal(9, c2.retrieve()); // 4 + 5 should return 9
+
+    // Also make sure the global counter was not modified
+    assert.equal(0, globalCounter);
   });
 });
 
