@@ -13,8 +13,8 @@ async function doubleOddNumberAsync(num) {
 
 describe("3 - Async", () => {
   it("should return the result or 0", async function() {
-    const even = await getOddNumberAsync(10); // even number, should return zero
-    const odd = await getOddNumberAsync(9); // odd number, should return the doubled result
+    const even = await doubleOddNumberAsync(10); // even number, should return zero
+    const odd = await doubleOddNumberAsync(9); // odd number, should return the doubled result
 
     assert.equal(even, 0);
     assert.equal(odd, 18);
